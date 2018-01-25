@@ -34,12 +34,14 @@
 var tf = new TableFilter(document.getElementById("datasets"), {
   base_path: "https://data.gbif.no/overview/tablefilter/",
   alternate_rows: true,
-  col_types: [ 'string', 'string', 'number', 'string', 'string' ],
+  col_types: ['string', 'string', 'number', 'string', 'string', 'date', 'date'],
   col_0: 'none',
   col_1: 'select',
   col_2: 'none',
   col_3: 'select',
   col_4: 'select',
+  col_5: 'none',
+  col_6: 'none',
   clear_filter_text: '- All -',
   extensions: [{ name: 'sort' }]
 });
