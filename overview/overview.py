@@ -4,6 +4,8 @@ import sys
 import json
 import pystache
 import requests
+from dateutil import parser as dateparser
+import dateutil
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -35,7 +37,9 @@ for result in response['results']:
         'occurrenceCount': occurrences['count'],
         'installation': sources[source]['title'],
         'organization': result['publishingOrganizationTitle'],
-        'type': result['type'].replace("_", " ").capitalize()
+        'type': result['type'].replace("_", " ").capitalize(),
+        'created': dateparser.parse(data['created']).strftime("%Y-%m-%d"),
+        'modified': dateparser.parse(data['modified']).strftime("%Y-%m-%d"),
     })
 
 template = open("template.html", "r").read()
