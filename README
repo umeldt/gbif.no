@@ -1,0 +1,11 @@
+A collection of small scripts and tools used for the gbif.no website.
+
+= overview
+
+Generates the dataset overview at [https://gbif.no/datasets/].
+
+= repatriated
+
+Downloads repatriated data from the GBIF API and creates a slightly modified
+"Artskart friendly" version of the downloaded archive.
+
