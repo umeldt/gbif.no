@@ -1,0 +1,8 @@
+body { font: 16px/1.4 sans-serif; }
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+th, td { text-align: left; padding: 0.2em 1em; }
+th, td { border: 1px solid #eee; }
+th { background: #eee; }
+th:hover { background: #ddd; }
+select { max-width: 16em; }
+
