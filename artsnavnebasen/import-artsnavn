@@ -1,0 +1,5 @@
+#!/bin/bash
+
+wget "http://eksport.artsdatabanken.no/Artsnavnebase/Artsnavnebase.csv"
+./artsnavn-csv2tc.pl < Artsnavnebase.csv
+
